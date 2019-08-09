@@ -107,6 +107,18 @@ header {
     padding-bottom: 20px;  
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 30px 20px;
+}
+
+#dottedLine {
+    border: 1px dashed black;
+    margin: 0 0 30px 0;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -239,6 +251,40 @@ header {
     justify-content: center;
 }
 
+#mainContainers {
+    display: flex;
+    flex-flow: column wrap;
+    height: 110vh;
+}
+
+.mainContainers {
+    display: flex;
+    flex-flow: column wrap;
+    width: 49%;
+    justify-content: center;   
+}
+
+.mainContainers h2 {
+    margin: 15px 0 0 0;
+}
+
+.mainContainers p {
+    margin: 20px 0 20px 0;
+}
+
+.learnButton {
+    border: 2px solid black;
+    padding: 7px 10px;
+    width: 115px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dottedLineAbout {
+    border: 1px dashed black;
+    margin: 20px 0;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -251,6 +297,11 @@ header {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#bottom {
+    margin: 30px 0;
+    width: 800px;
 }
 
 footer {
