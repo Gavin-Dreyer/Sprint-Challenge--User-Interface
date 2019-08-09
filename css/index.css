@@ -70,6 +70,22 @@ header {
     margin: 40px 275px;
 }
 
+@keyframes pulse {
+    0%, 100% {
+    background-color: yellow;
+  }
+    50% {
+    background-color: orange;
+  }
+}
+
+.headerNav a:hover {
+    animation:
+    pulse 3s ease infinite alternate;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .headerNav {
     display: flex;
     justify-content: space-around;
@@ -272,13 +288,30 @@ header {
     margin: 20px 0 20px 0;
 }
 
+@keyframes bounceIn {
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.learnButton:hover {
+    animation-duration: 3s;
+    animation-name: bounceIn;
+}
+
 .learnButton {
     border: 2px solid black;
     padding: 7px 10px;
     width: 115px;
     border-radius: 10px;
     text-align: center;
+
 }
+
 
 .dottedLineAbout {
     border: 1px dashed black;
@@ -302,6 +335,26 @@ header {
 #bottom {
     margin: 30px 0;
     width: 800px;
+}
+
+@keyframes shake {
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+footer nav a:hover {
+    animation: shake 2s;
+    animation-iteration-count: infinite; 
 }
 
 footer {
