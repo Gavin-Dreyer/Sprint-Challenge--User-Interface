@@ -66,6 +66,44 @@ p {
     line-height: 1.4;
 }
 
+header {
+    margin: 40px 275px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+    background-color: yellow;
+  }
+    50% {
+    background-color: orange;
+  }
+}
+
+.headerNav a:hover {
+    animation:
+    pulse 3s ease infinite alternate;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerNav a {
+    text-decoration: none;
+    color: black;
+}
+
+#headerImg {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -85,6 +123,18 @@ p {
     padding-bottom: 20px;  
 }
 
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 30px 20px;
+}
+
+#dottedLine {
+    border: 1px dashed black;
+    margin: 0 0 30px 0;
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -101,15 +151,171 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1 {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.middle-content .boxes .box2 {
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle-content .boxes .box3 {
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle-content .boxes .box4 {
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle-content .boxes .box5 {
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle-content .boxes .box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.middle-content .boxes .box7 {
+    width: 12.5%;
+    height: 100px;
+    background: darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box8 {
+    width: 12.5%;
+    height: 100px;
+    background: hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box9 {
+    width: 12.5%;
+    height: 100px;
+    background: indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-content .boxes .box10 {
+    width: 12.5%;
+    height: 100px;
+    background: dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainContainers {
+    display: flex;
+    flex-flow: column wrap;
+    height: 110vh;
+}
+
+.mainContainers {
+    display: flex;
+    flex-flow: column wrap;
+    width: 49%;
+    justify-content: center;   
+}
+
+.mainContainers h2 {
+    margin: 15px 0 0 0;
+}
+
+.mainContainers p {
+    margin: 20px 0 20px 0;
+}
+
+@keyframes bounceIn {
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.learnButton:hover {
+    animation-duration: 3s;
+    animation-name: bounceIn;
+}
+
+.learnButton {
+    border: 2px solid black;
+    padding: 7px 10px;
+    width: 115px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+.dottedLineAbout {
+    border: 1px dashed black;
+    margin: 20px 0;
 }
 
 .bottom-content {
@@ -124,6 +330,31 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+#bottom {
+    margin: 30px 0;
+    width: 800px;
+}
+
+@keyframes shake {
+    10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+footer nav a:hover {
+    animation: shake 2s;
+    animation-iteration-count: infinite; 
 }
 
 footer {
